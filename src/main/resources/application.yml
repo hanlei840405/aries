@@ -2,9 +2,9 @@ server:
   port: 8101
 eureka:
   instance:
-    hostname: 192.168.8.101
+    hostname: eureka-zuul
   client:
     registerWithEureka: false
     fetchRegistry: false
-    serviceUrl:
+    service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
